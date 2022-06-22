@@ -6,17 +6,12 @@ let popup;
 button.addEventListener("click",()=>{
     console.log("Presionado")
     popup = window.open("./html/popup.html","Popup","statusbar=no, width=800,height=400");
-    // window.establecerMensaje = function (mensaje) {
-    //     console.log("Mensaje: " + mensaje);
-    // }
-    // popup.addEventListener("DOMContentLoaded", function () {
-    //     console.log("Ventana abierta lista!");
-    //     popup.establecerMensaje("Hola. Enviando datos desde la ventana padre a la hija");
-    //   });
-    /*popup.addEventListener("DOMContentLoaded", function () {
+    
+    popup.addEventListener("DOMContentLoaded", function () {
         console.log("Ventana abierta lista!");
-        popup.establecerMensaje("Hola. Enviando datos desde la ventana padre a la hija");
-    });*/
+        popup.enviar("Hola. Enviando datos desde la ventana asdspadre a la hija");
+    });
+    
 })
 // Definición de función
 function establecerMensaje(m) {

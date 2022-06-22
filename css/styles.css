@@ -22,7 +22,7 @@ body> header.active {
 
 body > main{
     min-height: 150vh;
-    background-color: tomato;
+    background-color: rgb(228, 227, 227);
 }
 .conteiner-top{
     min-height: 100vh;
