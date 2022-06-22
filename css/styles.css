@@ -15,7 +15,7 @@ body > header{
 }
 
 body> header.active {
-    background-color:  #040b12;
+    background-color:  #020508;
 
     box-shadow: 0 2px 10px rgba(203, 198, 201 , 0.3);
 }
@@ -112,6 +112,34 @@ article footer{
     transform: scale(1);
 
 }
+
+
+
+
+/* Cargar texto y textarea*/
+.cargar{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+.cargar p{
+    text-align: center;
+    text-decoration: underline;
+}
+.cargar textarea{
+    width: 90%;
+    margin: 0 auto;
+}
+.cargar button{
+    width: 160px;
+    padding: 8px;
+    align-self: center;
+}
+
 
 
 /*Vista Tablets en vertical o Móviles en horizontal*/
