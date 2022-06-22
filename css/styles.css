@@ -74,7 +74,9 @@ article main{
     margin: 10px;
     text-align: center;
 }
-
+article main p {
+    padding-top: 10px;
+}
 .img_article{
     width: 90%;
     background-repeat: no-repeat; 
@@ -82,10 +84,29 @@ article main{
     margin: 0 auto;
 }
 main p{
-    text-align: start; /* el texto empiece en el inicio */
+    text-align: start;
 }
 article footer{
     margin: 10px;
+}
+
+/* Modal */
+.close{
+    position: absolute;
+    right: 5px;
+    color: #fff;
+}
+.modal-content{
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgb(0,0,0,.1);
+}
+.modal{
+    transition: .3s ease all;
+    transform: scale(.5);
+}
+.show{
+    transform: scale(1);
+
 }
 
 
