@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    min-height: 11vh;
+    background-color: teal;
+}
+main{
+    min-height: 78vh;
+    background-image: url("../img/background.jpg");
+}
+footer{
+    min-height: 11vh;
+    background-color: teal;
+
+}
