@@ -8,14 +8,18 @@ body > header{
     min-height: 11vh;
     position: fixed;
     width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
 }
-.nav-item{
-    color: white;
 
+body> header.active {
+    background-color:  #040b12;
+
+    box-shadow: 0 2px 10px rgba(203, 198, 201 , 0.3);
 }
-.nav-link{
-    color: white;
-}
+
 body > main{
     min-height: 150vh;
     background-color: tomato;
