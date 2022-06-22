@@ -17,8 +17,23 @@ header{
     color: white;
 }
 main{
-    min-height: 78vh;
+    min-height: 150vh;
+    background-color: tomato;
+}
+.conteiner-top{
+    min-height: 100vh;
+    padding-top: 11vh;
     background-image: url("../img/background.jpg");
+}
+.conteiner-top h1{
+    padding-top: 30vh;
+    text-align: center;
+    color: #fff;
+}
+.conteiner-top h2{
+    padding-top: 10vh;
+    text-align: center;
+    color: #fff;
 }
 footer{
     min-height: 11vh;
