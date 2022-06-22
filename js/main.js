@@ -40,15 +40,30 @@ function fixNav() {
 
 
 /* Cargar desde ajax */
-
 const url = '../home.json'
 const http = new XMLHttpRequest()
 
-http.open("GET", url)
+let textarea = document.getElementById("value-textarea");
+document.getElementById("load-textarea").addEventListener("click",()=>{
+    http.open("GET", url)
 
-http.onreadystatechange = function(){
-    if(this.readyState == 4 && this.status == 200){
-        console.log(JSON.parse(http.responseText))
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            //console.log(JSON.parse(http.responseText))
+            textarea.innerHTML = JSON.parse(http.responseText).texto;
+            console.log(textarea.innerHTML)
+        }
     }
-}
-http.send()
+    http.send()
+})
+
+
+document.querySelector(".social-github").addEventListener("click",()=>{
+    window.open("https://github.com/Danieltq04")
+})
+document.querySelector(".social-youtube").addEventListener("click",()=>{
+    window.open("https://www.youtube.com/channel/UCTWpcANvZaGCEKrS5NSDedg")
+})
+document.querySelector(".social-linkedin").addEventListener("click",()=>{
+    window.open("https://www.linkedin.com/in/danieltq04/")
+})

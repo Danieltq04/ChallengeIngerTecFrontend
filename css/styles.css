@@ -133,6 +133,7 @@ article footer{
 .cargar textarea{
     width: 90%;
     margin: 0 auto;
+    text-align: center;
 }
 .cargar button{
     width: 160px;
@@ -140,7 +141,25 @@ article footer{
     align-self: center;
 }
 
-
+/* Footer */
+footer{
+    text-align: center;
+}
+footer p{
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0 0 5px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+    padding: 10px;
+}
+.social img{
+    width: 30px;
+    cursor: pointer;
+}
 
 /*Vista Tablets en vertical o Móviles en horizontal*/
 @media (min-width: 768px){
