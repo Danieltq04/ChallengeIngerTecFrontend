@@ -64,16 +64,29 @@ document.querySelector(".social-linkedin").addEventListener("click",()=>{
 })
 
 
-let imgs = document.querySelectorAll("main > img");
-console.log(imgs)
+
 // imgs.forEach(element => {
 //     element.addEventListener("click",()=>{
 //         console.log(this)
 //     })
 // });
-for (var i = 0; i < imgs.length; i++){
-    imgs[i].addEventListener("click",function (e) { 
-        // console.log(this.dataset.valor) 
-        console.log(this.src) 
-    })
-}
+
+window.onload = () => {
+    let imgs = document.querySelectorAll("main > .img-article> img");
+    console.log(imgs)
+    for (var i = 0; i < imgs.length; i++){
+        console.log("a")
+        imgs[i].addEventListener("click",function (e) { 
+            //console.log(this.dataset.valor) 
+            //console.log(this.src) 
+            //$('#paresModal').modal('show');
+            //i%2
+            if(this.dataset.paridad == "par"){
+                console.log("Es par")
+            }
+            else{
+                console.log("Es impar")
+            }
+        })
+    }
+};
