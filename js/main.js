@@ -83,6 +83,19 @@ window.onload = () => {
             //i%2
             if(this.dataset.paridad == "par"){
                 console.log("Es par")
+                $('#paresModal').modal('show');
+
+                // $('.modal-video').empty();
+                // var contenido = $('.modal-video');
+                // var texto = `
+                // <div class="texto" >
+                //     <div class="embed-responsive embed-responsive-16by9">
+                //         <iframe width="560" height="315" src="${objeto_curso.link_intro}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                //     </div>
+                // </div>`
+                // contenido.append(texto);
+                document.getElementById("modal-img").src = this.src;
+                console.log(document.getElementById("modal-img").src)
             }
             else{
                 console.log("Es impar")
