@@ -1,23 +1,5 @@
 
 
-let button = document.querySelector(".visitas");
-
-let popup;
-button.addEventListener("click",()=>{
-    console.log("Presionado")
-    popup = window.open("./html/popup.html","Popup","statusbar=no, width=800,height=400");
-    
-    popup.addEventListener("DOMContentLoaded", function () {
-        console.log("Ventana abierta lista!");
-        popup.enviar("Hola. Enviando datos desde la ventana asdspadre a la hija");
-    });
-    
-})
-// Definición de función
-function establecerMensaje(m) {
-	console.log("Mensaje recibido de hijo: ", m)
-}
-
 
 
 
@@ -87,13 +69,60 @@ window.onload = () => {
                 document.getElementById("modal-img").src = this.src;
                 console.log(document.getElementById("modal-img").src)
 
-
                 document.getElementById("refvisitas"+this.dataset.refvisitas).innerHTML= parseInt(document.getElementById("refvisitas"+this.dataset.refvisitas).innerHTML)+1;
 
             }
             else{
                 console.log("Es impar")
+                console.log(this.src)
+                console.log(this.src.split("https://")[1])
+                console.log(String(this.src))
+                console.log("a"+this.src)
+                console.log(typeof(this.src));
+                let enlace = this.src;
+                let refviews = this.dataset.refvisitas;
+                let popup;
+                popup = window.open("./html/popup.html","Popup","statusbar=no, width=800,height=400");
+                
+                popup.addEventListener("DOMContentLoaded", function () {
+                    console.log("Ventana abierta lista!");
+                    //popup.enviar("Hola. Enviando datos desde la ventana asdspadre a la hija");
+                    popup.enviar(enlace,refviews);
+                    // popup.enviar(""+this.src);
+                    // popup.enviar(String(this.src));
+                    // popup.enviar(this.src.split("https://")[1]);
+                });
+                
+                // Definición de función
+                
+
+
+
             }
         })
     }
 };
+
+function establecerMensaje(referenciaImg) {
+    console.log("Mensaje recibido de hijo: ", referenciaImg)
+    document.getElementById("refvisitas"+referenciaImg).innerHTML= parseInt(document.getElementById("refvisitas"+referenciaImg).innerHTML)+1;
+
+}
+// let button = document.querySelector(".visitas");
+
+// let popup;
+// button.addEventListener("click",()=>{
+//     console.log("Presionado")
+//     popup = window.open("./html/popup.html","Popup","statusbar=no, width=800,height=400");
+    
+//     popup.addEventListener("DOMContentLoaded", function () {
+//         console.log("Ventana abierta lista!");
+//         popup.enviar("Hola. Enviando datos desde la ventana asdspadre a la hija");
+//     });
+    
+// })
+// // Definición de función
+// function establecerMensaje(m) {
+// 	console.log("Mensaje recibido de hijo: ", m)
+// }
+
