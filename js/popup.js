@@ -19,3 +19,6 @@ window.enviar = function (mensaje, refviews) {
 document.getElementById("button-ok").addEventListener("click",()=>{
     window.opener.establecerMensaje(refImg);
 })
+document.querySelector(".close").addEventListener("click",()=>{
+    window.opener.cerrarVentana();
+})

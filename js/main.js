@@ -52,6 +52,7 @@ document.querySelector(".social-linkedin").addEventListener("click",()=>{
 //         console.log(this)
 //     })
 // });
+let popup;
 
 window.onload = () => {
     let imgs = document.querySelectorAll("main > .img-article> img");
@@ -81,7 +82,7 @@ window.onload = () => {
                 console.log(typeof(this.src));
                 let enlace = this.src;
                 let refviews = this.dataset.refvisitas;
-                let popup;
+                popup;
                 popup = window.open("./html/popup.html","Popup","statusbar=no, width=800,height=400");
                 
                 popup.addEventListener("DOMContentLoaded", function () {
@@ -107,6 +108,10 @@ function establecerMensaje(referenciaImg) {
     console.log("Mensaje recibido de hijo: ", referenciaImg)
     document.getElementById("refvisitas"+referenciaImg).innerHTML= parseInt(document.getElementById("refvisitas"+referenciaImg).innerHTML)+1;
 
+}
+function cerrarVentana(){
+    //la referencia de la ventana es el objeto window del popup. Lo utilizo para acceder al método close
+    popup.close()
 }
 // let button = document.querySelector(".visitas");
 
