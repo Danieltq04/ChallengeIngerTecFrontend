@@ -62,3 +62,18 @@ document.querySelector(".social-youtube").addEventListener("click",()=>{
 document.querySelector(".social-linkedin").addEventListener("click",()=>{
     window.open("https://www.linkedin.com/in/danieltq04/")
 })
+
+
+let imgs = document.querySelectorAll("main > img");
+console.log(imgs)
+// imgs.forEach(element => {
+//     element.addEventListener("click",()=>{
+//         console.log(this)
+//     })
+// });
+for (var i = 0; i < imgs.length; i++){
+    imgs[i].addEventListener("click",function (e) { 
+        // console.log(this.dataset.valor) 
+        console.log(this.src) 
+    })
+}
