@@ -167,7 +167,7 @@ article footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 10px;
+    row-gap: 1em;
 }
 
 .text-title{
