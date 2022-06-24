@@ -33,7 +33,7 @@ body > main{
 
 .conteiner-top{
     min-height: 100vh;
-    padding-top: 11vh;
+    padding: 11vh 10px 0 10px;
     background-image: url("../img/background.jpg");
 }
 
@@ -44,10 +44,12 @@ body > main{
 
 .conteiner-top h1{
     padding-top: 30vh;
+    font-size: 32px;
 }
 
 .conteiner-top h2{
     padding-top: 10vh;
+    font-size: 24px;
 }
 
 
@@ -98,7 +100,7 @@ article header{
 }
 
 article header h2{
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     padding: 5px;
     border-bottom: solid 1px rgb(161, 161, 161);
@@ -173,7 +175,7 @@ article footer{
 .text-title{
     text-align: center;
     font-family: 'Teko', sans-serif;
-    font-size: 35px;
+    font-size: 32px;
     margin: 0;
     padding: .7em 0 .2em 0;
     color: black
@@ -225,12 +227,31 @@ article footer p{
     article main p{
         font-size: 14px;
     }
+    .conteiner-top h1{
+        font-size: 41px;
+    }
+    .conteiner-top h2{
+        font-size: 26px;
+    }
+    article header h2{
+        font-size: 18px;
+    }
+    .text-title{
+        font-size: 35px;
+    }
 }
 
 /*Vista Dispositivos medianos o tablets en horizontal*/
 @media (min-width: 992px){
     article{
         width: 18vw;
+    }
+    .conteiner-top h1{
+        font-size: 45px;
+    }
+    
+    .conteiner-top h2{
+        font-size: 26px;
     }
 }
 
