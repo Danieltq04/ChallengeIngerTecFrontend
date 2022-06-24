@@ -217,6 +217,11 @@ article footer p{
 .social img{
     width: 30px;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.social img:hover{
+    transform: scale(1.1);
 }
 
 /*Vista Tablets en vertical o Móviles en horizontal*/
@@ -257,7 +262,13 @@ article footer p{
 
 /*Vista Dispositivos grandes con pantalla ancha*/
 @media (min-width: 1200px) {
-
+    .conteiner-top h1{
+        font-size: 50px;
+    }
+    
+    .conteiner-top h2{
+        font-size: 30px;
+    }
 }
 
 
