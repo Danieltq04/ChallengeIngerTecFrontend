@@ -29,6 +29,7 @@ document.getElementById("load-textarea").addEventListener("click",()=>{
             //console.log(JSON.parse(http.responseText))
             textarea.innerHTML = JSON.parse(http.responseText).texto;
             console.log(textarea.innerHTML)
+            document.getElementById("title-ajax").innerHTML = "Texto cargado mediante AJAX"
         }
     }
     http.send()
@@ -104,13 +105,11 @@ window.onload = () => {
     }
 };
 
-function establecerMensaje(referenciaImg) {
+function incrementarVisita(referenciaImg) {
     console.log("Mensaje recibido de hijo: ", referenciaImg)
     document.getElementById("refvisitas"+referenciaImg).innerHTML= parseInt(document.getElementById("refvisitas"+referenciaImg).innerHTML)+1;
-
 }
 function cerrarVentana(){
-    //la referencia de la ventana es el objeto window del popup. Lo utilizo para acceder al método close
     popup.close()
 }
 // let button = document.querySelector(".visitas");

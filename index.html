@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Challenge ingerTec</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Teko:wght@500&display=swap" rel="stylesheet">
+
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!-- CSS Bootstrap-->
@@ -46,6 +50,8 @@
       <h2>Perfil y Pruebas para nuevas incorporaciones en Ingertec</h2>
 
     </div>
+
+    <p class="text-title">Galería de cuadros famosos</p>
 
     <div class="articulos">
 
@@ -154,7 +160,7 @@
             alt="img artículo" class="img_article imagenes" data-paridad="par" data-refvisitas="6">
           </div>
           <p>
-            "La ronda de noche", se puede encontrar en el Museo Nacional de Ámsterdam.
+            "La ronda de noche", este cuadro es una de las joyas de la exposición permanente del Rijksmuseum de Ámsterdam, pinacoteca especializada en arte neerlandés.
           </p>
         </main>
         <footer>
@@ -167,12 +173,12 @@
 
 
     <div class="cargar">
-      <p>Texto a cargar</p>
+      <p class="text-title" id="title-ajax">Cargar texto mediante ajax</p>
 
       <textarea id="value-textarea" name="text" rows="2" cols="50">
         Este es el texto por defecto que se muestra en el textarea
       </textarea>
-      <button class="btn btn-success" type="submit" id="load-textarea">Cargar Texto</button>
+      <button class="btn" type="submit" id="load-textarea">Cargar Texto</button>
     </div>
 
 
@@ -184,7 +190,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
             <img src="./img/fondo4.jpg" alt="img artículo" id="modal-img">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
           
@@ -195,7 +201,7 @@
 
   </main>
   <footer>
-    <p>Contact me</p>
+    <p>Contactame</p>
     <div class="social">
       <img class="social-github" src="./img/github.png" alt="github">
       <img class="social-youtube" src="./img/youtube.png" alt="youtube">
