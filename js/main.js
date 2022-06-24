@@ -18,7 +18,7 @@ window.onload = () => {
                 popup = window.open("./html/popup.html","Popup","statusbar=no, width=800,height=400");
                 
                 popup.addEventListener("DOMContentLoaded", function () {
-                    popup.enviar(enlace,refviews);
+                    popup.sendSrcAndRef(enlace,refviews);
                 });
             }
         })
@@ -26,12 +26,12 @@ window.onload = () => {
 };
 
 /* Recibe la referencia a un artículo e incrementa el contador del articulo referenciado */
-function incrementarVisita(referenciaImg) {
-    document.getElementById("refvisitas"+referenciaImg).innerHTML= parseInt(document.getElementById("refvisitas"+referenciaImg).innerHTML)+1;
+function increaseVisits(refImg) {
+    document.getElementById("refvisitas"+refImg).innerHTML= parseInt(document.getElementById("refvisitas"+refImg).innerHTML)+1;
 }
 
 /* Cierra un popup */
-function cerrarVentana(){
+function closePopup(){
     popup.close()
 }
 

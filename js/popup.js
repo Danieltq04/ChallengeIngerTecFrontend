@@ -1,24 +1,15 @@
 
-
-
-
-
-
-
 let refImg;
-// Definición de función desde la que nos llama el padre
-window.enviar = function (mensaje, refviews) {
-    console.log("Mensaje: " + mensaje);
-    console.log(mensaje,refviews);
+
+window.sendSrcAndRef = function (srcImg, refviews) {
     refImg = refviews;
-    document.querySelector("main").style.backgroundImage = `url(${""+mensaje})`
-    console.log(document.querySelector("main"))
+    document.querySelector("main").style.backgroundImage = `url(${""+srcImg})`
 }
 
 
 document.getElementById("button-ok").addEventListener("click",()=>{
-    window.opener.incrementarVisita(refImg);
+    window.opener.increaseVisits(refImg);
 })
 document.querySelector(".close").addEventListener("click",()=>{
-    window.opener.cerrarVentana();
+    window.opener.closePopup();
 })
