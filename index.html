@@ -6,21 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Challenge ingerTec</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Teko:wght@500&display=swap"
+    rel="stylesheet">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
   <!-- CSS Bootstrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+  <!-- CSS Styles-->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <!-- PONER TODO EN INGLÉS -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#">
-        <img src="./img/logo.png" width="auto" height="50" alt="">
+        <img src="./img/logo.png" width="auto" height="50" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,26 +52,27 @@
     <div class="conteiner-top">
       <h1>Challenge IngerTec</h1>
       <h2>Perfil y Pruebas para nuevas incorporaciones en Ingertec</h2>
-
     </div>
 
-    <div class="articulos">
+    <p class="text-title">Galería de cuadros famosos</p>
 
+    <div class="articles">
       <article>
         <header>
           <h2>Salvador Dalí</h2>
         </header>
         <main>
           <div class="img-article">
-            <img src="https://img3.viajar.elperiodico.com/6b/ce/79/persistencia-memoria-salvador-dali-650x447.jpg" 
-            alt="img artículo" class="img_article imagenes" data-paridad="impar">
+            <img src="https://img3.viajar.elperiodico.com/6b/ce/79/persistencia-memoria-salvador-dali-650x447.jpg"
+              alt="img artículo" class="img_article imagenes" data-paridad="impar" data-refvisitas="1">
           </div>
           <p>
-            'La persistencia de la memoria', la podemos admirar en el Museo de Arte Moderno de Nueva York (MoMA), donde llegó en 1934.
+            'La persistencia de la memoria', la podemos admirar en el Museo de Arte Moderno de Nueva York (MoMA), donde
+            llegó en 1934.
           </p>
         </main>
         <footer>
-          <label class="visitas">0</label>
+          <label class="visitas" id="refvisitas1">0</label>
           <i class="fa-solid fa-eye"></i>
         </footer>
       </article>
@@ -74,11 +83,12 @@
         </header>
         <main>
           <div class="img-article">
-            <img src="https://img4.viajar.elperiodico.com/cf/0f/bd/noche-estrellada-vicent-gogh-650x518.jpg" 
-            alt="img artículo" class="img_article imagenes" data-paridad="par" data-refvisitas="2">
+            <img src="https://img4.viajar.elperiodico.com/cf/0f/bd/noche-estrellada-vicent-gogh-650x518.jpg"
+              alt="img artículo" class="img_article imagenes" data-paridad="par" data-refvisitas="2">
           </div>
           <p>
-            'La noche estrellada', lo podemos admirar en la colección permanente del Museo de Arte Moderno de la Ciudad de Nueva York.
+            'La noche estrellada', lo podemos admirar en la colección permanente del Museo de Arte Moderno de la Ciudad
+            de Nueva York.
           </p>
         </main>
         <footer>
@@ -93,15 +103,16 @@
         </header>
         <main>
           <div class="img-article">
-            <img src="https://img2.viajar.elperiodico.com/23/a9/dd/guernica-pablo-picasso-650x281.jpg" 
-            alt="img artículo" class="img_article imagenes" data-paridad="impar">
+            <img src="https://img2.viajar.elperiodico.com/23/a9/dd/guernica-pablo-picasso-650x281.jpg"
+              alt="img artículo" class="img_article imagenes" data-paridad="impar" data-refvisitas="3">
           </div>
           <p>
-            'Guernica', está expuesta en el Museo Reina Sofía de Madrid  y está considerada una de las obras más importantes del arte del siglo XX.
+            'Guernica', está expuesta en el Museo Reina Sofía de Madrid y está considerada una de las obras más
+            importantes del arte del siglo XX.
           </p>
         </main>
         <footer>
-          <label class="visitas">0</label>
+          <label class="visitas" id="refvisitas3">0</label>
           <i class="fa-solid fa-eye"></i>
         </footer>
       </article>
@@ -112,11 +123,11 @@
         </header>
         <main>
           <div class="img-article">
-            <img src="https://img2.viajar.elperiodico.com/9e/bc/8c/amarillo-rojo-azul-wassily-kandisnky-650x414.jpg" 
-            alt="img artículo" class="img_article imagenes" data-paridad="par" data-refvisitas="4">
+            <img src="https://img2.viajar.elperiodico.com/9e/bc/8c/amarillo-rojo-azul-wassily-kandisnky-650x414.jpg"
+              alt="img artículo" class="img_article imagenes" data-paridad="par" data-refvisitas="4">
           </div>
           <p>
-            'Amarillo, rojo, azul', está en el  Museo Nacional de Arte Moderno de París.
+            'Amarillo, rojo, azul', está en el Museo Nacional de Arte Moderno de París.
           </p>
         </main>
         <footer>
@@ -131,15 +142,15 @@
         </header>
         <main>
           <div class="img-article">
-            <img src="https://img2.viajar.elperiodico.com/da/1a/87/amantes-rene-magritte-650x358.jpg" 
-            alt="img artículo" class="img_article imagenes" data-paridad="impar">
+            <img src="https://img2.viajar.elperiodico.com/da/1a/87/amantes-rene-magritte-650x358.jpg" alt="img artículo"
+              class="img_article imagenes" data-paridad="impar" data-refvisitas="5">
           </div>
           <p>
             'Los amantes', los podemos admirar en el MoMA de Nueva York.
           </p>
         </main>
         <footer>
-          <label class="visitas">0</label>
+          <label class="visitas" id="refvisitas5">0</label>
           <i class="fa-solid fa-eye"></i>
         </footer>
       </article>
@@ -150,11 +161,12 @@
         </header>
         <main>
           <div class="img-article">
-            <img src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/03/16/16474306398686.jpg" 
-            alt="img artículo" class="img_article imagenes" data-paridad="par" data-refvisitas="6">
+            <img src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/03/16/16474306398686.jpg"
+              alt="img artículo" class="img_article imagenes" data-paridad="par" data-refvisitas="6">
           </div>
           <p>
-            "La ronda de noche", se puede encontrar en el Museo Nacional de Ámsterdam.
+            "La ronda de noche", este cuadro es una de las joyas de la exposición permanente del Rijksmuseum de
+            Ámsterdam, pinacoteca especializada en arte neerlandés.
           </p>
         </main>
         <footer>
@@ -167,12 +179,12 @@
 
 
     <div class="cargar">
-      <p>Texto a cargar</p>
+      <p class="text-title" id="title-ajax">Cargar texto mediante ajax</p>
 
       <textarea id="value-textarea" name="text" rows="2" cols="50">
         Este es el texto por defecto que se muestra en el textarea
       </textarea>
-      <button class="btn btn-success" type="submit" id="load-textarea">Cargar Texto</button>
+      <button class="btn" type="submit" id="load-textarea">Cargar Texto</button>
     </div>
 
 
@@ -183,11 +195,11 @@
       aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <img src="./img/fondo4.jpg" alt="img artículo" id="modal-img">
+          <img src="" alt="img artículo" id="modal-img">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          
+
         </div>
       </div>
     </div>
@@ -195,7 +207,7 @@
 
   </main>
   <footer>
-    <p>Contact me</p>
+    <p>Contactame</p>
     <div class="social">
       <img class="social-github" src="./img/github.png" alt="github">
       <img class="social-youtube" src="./img/youtube.png" alt="youtube">
@@ -214,6 +226,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
+  <!-- Scripts -->
   <script src="./js/main.js"></script>
 </body>
 
